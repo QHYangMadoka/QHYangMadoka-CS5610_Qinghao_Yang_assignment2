@@ -1,7 +1,7 @@
 # Minesweeper Game
 
 ## Website URL
-[Visit the Minesweeper Game](https://placeholder-for-deployed-site.com)
+[Visit the Minesweeper Game](https://qhmadoka-minesweeper.onrender.com)
 
 ---
 
