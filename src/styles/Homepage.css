@@ -1,0 +1,59 @@
+.homepage {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+margin: 20px;
+padding: 20px;
+line-height: 1.6;
+color: #333;
+text-align: left; /* Align all content to the left */
+background-color: #f9f9f9; /* Light background color */
+border-radius: 8px; /* Rounded corners */
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+.homepage h1 {
+font-size: 2.5rem;
+color: #2c3e50;
+margin-bottom: 20px;
+}
+
+.homepage h2 {
+font-size: 1.8rem;
+color: #34495e;
+margin-top: 20px;
+margin-bottom: 10px;
+}
+
+.homepage p {
+font-size: 1rem;
+margin-bottom: 15px;
+}
+
+.homepage ul {
+margin-left: 20px;
+padding-left: 20px;
+}
+
+.homepage li {
+margin-bottom: 10px;
+font-size: 1rem;
+}
+
+.homepage a {
+color: #3498db; /* Blue color for links */
+text-decoration: none;
+}
+
+.homepage a:hover {
+text-decoration: underline; /* Underline links on hover */
+}
+
+.homepage ul li a {
+  display: flex; /* Align image and text horizontally */
+  align-items: center; /* Vertically center image and text */
+  gap: 8px; /* Add space between image and text */
+}
+
+.link-logo {
+  width: 20px; /* Set a fixed width for the images */
+  height: 20px; /* Set a fixed height for the images */
+}

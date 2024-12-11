@@ -1,0 +1,24 @@
+/* 全局样式 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* 浅灰背景 */
+  }
+  
+  /* 内容容器样式 */
+  .content {
+    margin-left: 220px; /* 为固定导航栏预留空间 */
+    padding: 20px;
+  }
+  
+  /* 链接默认样式 */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  

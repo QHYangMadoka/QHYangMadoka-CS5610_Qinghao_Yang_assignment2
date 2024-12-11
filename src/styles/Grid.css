@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+
+.grid-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Status bar styling */
+.status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  font-size: 1.2rem;
+}
+
+/* Grid and row styling */
+.grid {
+  display: grid;
+  gap: 0; /* 消除单元格之间的间隙 */
+  border: 2px solid #000;
+  background-color: #ddd;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden; /* 防止内容溢出 */
+}
+
+/* Cell styling */
+.cell {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  border: 1px solid #aaa;
+  background-color: #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+.cell.safe {
+  background-color: #e8e8e8;
+  border: 1px solid #999;
+  cursor: default;
+}
+
+.cell.mine {
+  background-color: #f44336;
+  color: white;
+  font-weight: bold;
+}
+
+.cell.flagged {
+  background-color: #ffc107;
+  color: black;
+}
+
+/* Numbered cell colors */
+.number-1 {
+  color: blue;
+}
+.number-2 {
+  color: green;
+}
+.number-3 {
+  color: red;
+}
+.number-4 {
+  color: purple;
+}
+.number-5 {
+  color: maroon;
+}
+.number-6 {
+  color: teal;
+}
+.number-7 {
+  color: black;
+}
+.number-8 {
+  color: gray;
+}
+
+/* Hover effect */
+.cell:hover {
+  background-color: #bbb;
+  transform: scale(1.05);
+}
+
+/* Reset button styling */
+.reset-button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.reset-button:hover {
+  background-color: #1976d2;
+}
