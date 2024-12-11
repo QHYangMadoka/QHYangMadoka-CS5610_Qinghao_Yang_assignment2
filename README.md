@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+# Minesweeper Game
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Website URL
+[Visit the Minesweeper Game](https://placeholder-for-deployed-site.com)
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Project Overview
 
-### `npm start`
+This project is a React implementation of the classic Minesweeper game, completed as part of the CS5610: Web Development course. The game includes various features such as state management, React principles, and bonus functionalities.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features and Completion Status
 
-### `npm test`
+### Correct Views and Good Styling
+The project satisfies the requirement of having at least three views:
+1. **Homepage**:
+   - Displays the game name, project information, and useful links.
+   - URL: `/`
+2. **Game Page**:
+   - Allows the user to play Minesweeper with three difficulty levels: Easy, Medium, and Hard.
+   - Each difficulty is accessible via:
+     - `/game/easy`: 8x8 grid with 10 mines.
+     - `/game/medium`: 16x16 grid with 40 mines.
+     - `/game/hard`: 30x16 grid with 99 mines.
+3. **Rules Page**:
+   - Explains the rules of Minesweeper, the game objective, and the various states of the tiles.
+   - URL: `/rules`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The project includes consistent and responsive styling across all pages using CSS and React Bootstrap.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### State Management
+This project uses React state management effectively:
+- **Global State**:
+  - Implemented using a Context provider to manage shared state across components.
+- **Local State**:
+  - Used via `useState` for component-specific data such as game progress and grid updates.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Demonstrating Proper React Principles
+The project adheres to React best practices:
+- **Components**:
+  - Includes at least four React components: `Navbar`, `Homepage`, `GamePage`, and `Grid`.
+- **Props**:
+  - The `Grid` component receives props (`rows`, `cols`, `mines`) from the parent `GamePage`.
+- **Nested Components**:
+  - `Grid` is nested within `GamePage`, and `Navbar` is rendered globally.
+- **State Communication**:
+  - Data flows between child and parent components through state and Context without using direct callback functions.
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Bonus Points
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### Safe First Turn (2pts)
+- The first click on the grid is guaranteed to be safe, ensuring no mines are present at the clicked location. This functionality dynamically adjusts mine placement on the first click.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### Flag Bomb Function (3pts)
+- Users can flag cells suspected to contain bombs:
+  - **Right-click** or **Shift + click** flags or unflags a cell.
+  - A counter tracks the number of flags used relative to the total number of mines.
+  - Flags serve as visual indicators and do not affect gameplay mechanics.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+#### Auto Clear (5pts)
+- Clicking on a cell with `0` adjacent bombs recursively clears all neighboring empty cells until non-zero cells are reached. This behavior mimics standard Minesweeper rules.
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
