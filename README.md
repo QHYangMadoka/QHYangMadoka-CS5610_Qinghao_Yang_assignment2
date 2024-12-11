@@ -70,6 +70,31 @@ The project adheres to React best practices:
 
 ---
 
+## Writeup
+
+### Challenges Faced
+One of the main challenges was ensuring that the grid logic worked seamlessly for all difficulty levels and edge cases. Handling recursive cell clearing for the auto-clear functionality required careful planning to avoid stack overflow issues. Additionally, implementing a dynamic and responsive UI that looked good across different devices was a time-intensive process.
+
+### Future Improvements
+Given more time, I would consider adding the following features:
+- **Save and Resume**: Implementing local storage to allow users to resume their game after closing the browser.
+- **Custom Difficulty**: Allowing users to set their own grid size and number of mines.
+- **Leaderboard**: Tracking high scores and completion times for competitive gameplay.
+- **Accessibility Enhancements**: Adding screen reader support and better keyboard navigation.
+
+### Assumptions Made
+- The first click should always be safe and not trigger a mine.
+- Users understand the Minesweeper rules and can use flags effectively.
+- The number of mines on the board matches the difficulty level exactly.
+
+### Time Taken
+This project took approximately **25-30 hours** to complete, including time spent on debugging, styling, and implementing bonus features.
+
+### Feedback
+I enjoyed the challenge of combining React principles with game logic. The recursive cell clearing and state management were particularly interesting problems to solve. However, the requirement for proper context implementation felt slightly restrictive in this context, where most of the game's logic could have been handled locally. Overall, it was a rewarding experience that allowed me to deepen my understanding of React.
+
+---
+
 
 
 
